@@ -3,6 +3,7 @@
 body {
   background-color: rgba(3, 26, 153, 0.918);
 }
+
 h1, h2, h3, h4 {
   font-family: 'Sansita Swashed', cursive;
   color: goldenrod;
@@ -34,6 +35,12 @@ main article, section, footer {
   font-weight: 400;
   line-height: 20px;
 }
+.item{
+  display: flex;
+  flex-direction: column;
+}
+.item img{
+}
 
 /*rule styles*/
 
@@ -60,12 +67,6 @@ ul li {
   text-align: center;
 }
 
-ol {
-  list-style-position: outside;
-  text-align: left;
-  letter-spacing: 1px;
-}
-
 /*img styles*/
 
 .img-wrapper {
@@ -76,7 +77,11 @@ ol {
 
 /*link styles*/
 
-nav {
+a {
+  text-decoration: none;
+}
+
+main article section nav {
   display: flex;
   justify-content: center;
 }
@@ -105,32 +110,44 @@ a:target {
 footer {
   padding-bottom: 5px;
 }
+
 /*Desktop styles*/
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   header {
-display: flex;  
-flex-direction: row;
-align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+  header nav ul li {
+    padding-left: 10px;
+  }
+  main {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .formandmap form, .formandmap {
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-justify-content: center;
-}
-main {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.formandmap form, .formandmap {
-  background-color: chartreuse;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 300px;
-  padding-right: 300px;
-}
-}
 @media screen and (min-width:1100px) {
   main {
     margin-left: 200px;
