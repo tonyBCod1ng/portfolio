@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Anthony Brown - Software Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--header with photo-->
+  <header>
+    <div>
+    <h1>Anthony Brown</h1>
+    <h3>Software Developer</h3>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        
+        <li><a href="#hobbies"> Interests</a></li>
+        <li><a href="#social"> Social Media</a> </li>
+        <li><a href="#projects"> My Brain Children</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="img-wrapper">
+    <img src="images/picOfMe.jpeg" alt="picOfMe" width="200">
+  </div>
+  <hr>
+  <main>
+    <!--intro-->
+    <article>
+      <h2 id="intro">Nice to Meet You!</h2>
+      <section>
+        <h3>Who I Am</h3>
+        <p><em>Hello, I'm Anthony Brown, a prospective student for Thinkful's Software Engineering Immersion program. I
+            live in Miami, Florida and
+            I'm seeking to gain knowledge and employment in the field of technology as a Software Devoloper!
+            Though anything in this field excites me, I also have a passion for making music,
+            for which I use a multitude of diffent wares (mostly soft ones);
+            I want to develop software synths and plug-ins for making music.
+            I look forward to colloaborate on a vast amount of projects as I continue on my journey, feel free to
+            contact me.</em>
+        </p>
+        <h3 id="hobbies">What I Like to Do</h3>
+        <h4>I Enjoy</h4>
+        <ul>
+          <li>Making music</li>
+          <li>Learning to Code</li>
+          <li>Brain-Teasers</li>
+          <li>Puzzles</li>
+        </ul>
+      </section>
+      <!--contact info-->
+      <section>
+        <h3>Let's Connect!</h3>
+        <h4 id="social">Social Media</h4>
+        <nav>
+          <ol>
+            <li>
+              <a href="https://github.com/tonyBCod1ng" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anthony-brown-a08371201/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="mailto:browb88@icloud.com">Email Me! browb88@icloud.com </a>
+            </li>
+          </ol>
+        </nav>
+        <h4 id="contact">Send me a Message</h4>
+          <form action="https://formspree.io/f/mwkwdkkk" method="POST">
+            <fieldset>
+              <label for="name">Name</label>
+              <input required id="name" type="text" name="name" placeholder="Type your full name here.">
+              <label for="email">E-mail</label>
+              <input required type="email" name="email" placeholder="Type your e-mail here">
+              <label for="message">Message</label>
+              <textarea required id="message" cols="21" rows="" name="message" placeholder="What's up?" maxlength="200"
+                autofocus="on"></textarea>
+            </fieldset>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <!--map section-->
+          <h4>My Location</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57482.22608088107!2d-80.26447784565256!3d25.782480595945426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1607193525458!5m2!1sen!2sus"
+            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+      <section>
+        <h2 id="projects">My Projects</h2>
+        <div class="group">
+          <div class="item">
+            <h3>Project 1</h3>
+            <p>A description of my project</p>
+          </div>
+          <div class="item">
+            <h3>Project 2</h3>
+            <p>A description of my project</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="item">
+            <h3>Project 3</h3>
+            <p>A description of my project</p>
+          </div>
+          <div class="item">
+            <h3>Project 4</h3>
+            <p>A description of my project</p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <!--footer-->
+  <footer>
+    <h5>&copy;Anthony Brown</h5>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

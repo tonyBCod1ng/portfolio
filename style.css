@@ -1,0 +1,139 @@
+/*common styles*/
+
+body {
+  background-color: rgba(3, 26, 153, 0.918);
+}
+h1, h2, h3, h4 {
+  font-family: 'Sansita Swashed', cursive;
+  color: goldenrod;
+  letter-spacing: 2px;
+}
+
+article, header, footer, fieldset {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main, footer {
+  color: goldenrod;
+  text-align: center;
+}
+
+p {
+  letter-spacing: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main article, section, footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/*rule styles*/
+
+hr {
+  margin-bottom: -1px;
+  margin-top: -1px;
+}
+
+/*list styles*/
+
+ul {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column-reverse;
+  align-content: flex-start;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+ul li {
+  text-align: center;
+}
+
+ol {
+  list-style-position: outside;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/*img styles*/
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+/*link styles*/
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+a:link {
+  color: goldenrod;
+}
+
+a:visited {
+  color: rgb(184, 139, 28);
+}
+
+a:hover {
+  transition-duration: .7s;
+  color: yellow;
+  letter-spacing: 4px;
+}
+
+a:target {
+  transition-duration: .3s;
+  color: wheat;
+}
+
+/*footer styles*/
+
+footer {
+  padding-bottom: 5px;
+}
+/*Desktop styles*/
+@media screen and (min-width: 600px){
+  header {
+display: flex;  
+flex-direction: row;
+align-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+main {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.formandmap form, .formandmap {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+}
+@media screen and (min-width:1100px) {
+  main {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
