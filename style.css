@@ -35,11 +35,10 @@ main article, section, footer {
   font-weight: 400;
   line-height: 20px;
 }
-.item{
+
+.item {
   display: flex;
   flex-direction: column;
-}
-.item img{
 }
 
 /*rule styles*/
