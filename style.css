@@ -126,23 +126,17 @@ footer {
   header nav ul li {
     padding-left: 10px;
   }
-  main {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-  .formandmap form, .formandmap {
-    background-color: chartreuse;
+  .item {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 300px;
-    padding-right: 300px;
+    flex-direction: column;
+    margin-right: 200px;
+    margin-left: 200px;
   }
 }
 
 @media screen and (min-width:1100px) {
   main {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 140px;
+    margin-right: 140px;
   }
 }
