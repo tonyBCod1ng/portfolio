@@ -70,12 +70,14 @@ ul li {
 /*link styles*/
 
 a {
-  text-decoration: none;
+  text-decoration:solid;
+  font-weight: 900;
 }
 
 main article section nav {
   display: flex;
   justify-content: center;
+  text-decoration: underline;
 }
 
 a:link {
